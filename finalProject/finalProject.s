@@ -153,6 +153,14 @@ continue_while:
 	b end_do_while			//if it has been pushed, exit the loop
 
 end_do_while:
+
+	mov r0, #GRN_CAR
+	bl pinOff
+
+	mov r0, #RED_WALK
+	bl pinOff
+
+
 	mov r0, #0
 	pop {pc}
 
